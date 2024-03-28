@@ -47,13 +47,37 @@
         }
 
 
-        #find-me {
-            min-height: auto;
-            background-color: #1a202c;
-            color: #fff;
-            padding: 40px;
+        #find-me button {
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
         }
 
+        #find-me button:hover {
+            opacity: 0.8;
+        }
+
+        #find-me button:focus {
+            outline: none;
+        }
+
+        #find-me button.linkedin {
+            background-color: #0e76a8;
+            color: #fff;
+        }
+
+        #find-me button.github {
+            background-color: #333;
+            color: #fff;
+        }
+
+        #find-me button.email {
+            background-color: #c53030;
+            color: #fff;
+        }
 
         .close-btn {
             position: absolute;
@@ -63,12 +87,12 @@
             color: #fff;
             font-size: 20px;
         }
-        @media (max-width:768px){
-        	.nav-toggle{
-            display:block;
+
+        @media (max-width:768px) {
+            .nav-toggle {
+                display: block;
             }
         }
-        
     </style>
 </head>
 
@@ -86,7 +110,7 @@
                 <li><a href="#home" class="hover:text-gray-300">Home</a></li>
                 <li><a href="#skills" class="hover:text-gray-300">Skills</a></li>
                 <li><a href="#education" class="hover:text-gray-300">Education</a></li>
-                 <li><a href="#experience" class="hover:text-gray-300">Experience</a></li>
+                <li><a href="#experience" class="hover:text-gray-300">Experience</a></li>
                 <li><a href="#find-me" class="hover:text-gray-300">Find Me</a></li>
             </ul>
         </div>
@@ -111,15 +135,21 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <!-- Profile Image -->
                 <div class="text-center">
-                    <img src="https://avatars.githubusercontent.com/u/130993659?v=4" alt="Profile Picture" class="w-48 h-48 rounded-full mx-auto mb-4">
+                    <img src="https://avatars.githubusercontent.com/u/130993659?v=4" alt="Profile Picture"
+                        class="w-48 h-48 rounded-full mx-auto mb-4">
                     <h2 class="text-2xl font-bold mb-2">Diya Shajith K</h2>
-                    <p class="text-gray-600">Student at Jain University|Passionate about App Development|Passionate about Tutoring</p>
+                    <p class="text-gray-600">Student at Jain University|Passionate about App Development|Passionate
+                        about Tutoring</p>
                 </div>
                 <!-- Introduction -->
                 <div>
-                    <p class="text-lg text-gray-300">Hello, I am a Determined Bachelor's Degree Student at Mary Matha Arts And Science College, Manathavady, specializing in Computer Science.</p>
-                    <p class="text-lg text-gray-300">With a solid foundation in Computer Science, reflected in my Bachelor's degree with a CGPA of 8.6, I have consistently demonstrated academic excellence.</p>
-                    <p class="text-lg text-gray-300">Eager to enhance my capabilities, I am actively seeking opportunities to contribute to challenging projects in the fields of App Development and Machine Learning.</p>
+                    <p class="text-lg text-gray-300">Hello, I am a Determined Bachelor's Degree Student at Mary Matha
+                        Arts And Science College, Manathavady, specializing in Computer Science.</p>
+                    <p class="text-lg text-gray-300">With a solid foundation in Computer Science, reflected in my
+                        Bachelor's degree with a CGPA of 8.6, I have consistently demonstrated academic excellence.</p>
+                    <p class="text-lg text-gray-300">Eager to enhance my capabilities, I am actively seeking
+                        opportunities to contribute to challenging projects in the fields of App Development and Machine
+                        Learning.</p>
                 </div>
             </div>
         </section>
@@ -173,14 +203,22 @@
         </section>
 
         <!-- Find Me Section -->
+
+
         <section id="find-me" class="py-8">
             <h2 class="text-3xl font-bold mb-8">Find Me On</h2>
             <div class="flex items-center space-x-4">
-                <a href="https://in.linkedin.com/in/diyashajithk" class="text-3xl hover:text-blue-500"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/DiyaShajith" class="text-3xl hover:text-gray-600"><i class="fab fa-github"></i></a>
-                 <a href="mailto:your.email@example.com" class="text-3xl hover:text-red-500"><i class="fas fa-envelope"></i></a>
+                <button onclick="window.open('https://in.linkedin.com/in/diyashajithk')"
+                    class="text-3xl bg-transparent border border-blue-500 hover:bg-blue-500 hover:text-white rounded-full px-4 py-2 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500">LinkedIn</button>
+                <button onclick="window.open('https://github.com/DiyaShajith')"
+                    class="text-3xl bg-transparent border border-gray-600 hover:bg-gray-600 hover:text-white rounded-full px-4 py-2 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-600">GitHub</button>
+                <button onclick="window.location.href='mailto:your.diyashajith.2231@gmail.com'"
+                    class="text-3xl bg-transparent border border-red-500 hover:bg-red-500 hover:text-white rounded-full px-4 py-2 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-red-500">Email</button>
             </div>
         </section>
+
+
+
     </main>
 
 
